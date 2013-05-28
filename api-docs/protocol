@@ -135,66 +135,43 @@
     }
   ],
   "models":{
-    "Category":{
-      "id":"Category",
-      "properties":{
-        "id":{
-          "type":"long"
-        },
-        "name":{
-          "type":"string"
+      "observations": [
+        {
+            "uri": "http://ambit.uni-plovdiv.bg:8080/xmetdb/protocol/XMETDB20",
+            "identifier": "XMETDB20",
+            "title": "ENZ",
+            "description": "Enzymes",
+            "atom_uncertainty": "Certain",
+            "product_amount": "Minor",
+            "enzyme": {
+                "id": 3,
+                "code": "CYP2E1",
+                "name": "cytochrome P450, family 2, subfamily E, polypeptide 1",
+                "uniprot": "P05181"
+            },
+            "reference": "Chen et al., Chem. Res. Toxicol. 1998, 11, 295-301",
+            "comments": "This is a comment.",
+            "updated": "May 28 2013",
+            "curated": false,
+            "publishedStatus": "published",
+            "owner": {
+                "uri": "http://ambit.uni-plovdiv.bg:8080/xmetdb/user/U1",
+                "username": "admin"
+            },
+            "Substrate": {
+                "dataset": {
+                    "uri": "http://ambit.uni-plovdiv.bg:8080/xmetdata/dataset/R181",
+                    "structure": null
+                }
+            },
+            "Product": {
+                "dataset": {
+                    "uri": "http://ambit.uni-plovdiv.bg:8080/xmetdata/dataset/R180",
+                    "structure": null
+                }
+            }
         }
-      }
-    },
-    "Pet":{
-      "id":"Pet",
-      "properties":{
-        "tags":{
-          "items":{
-            "$ref":"Tag"
-          },
-          "type":"Array"
-        },
-        "id":{
-          "type":"long"
-        },
-        "category":{
-          "type":"Category"
-        },
-        "status":{
-          "allowableValues":{
-            "valueType":"LIST",
-            "values":[
-              "available",
-              "pending",
-              "sold"
-            ],
-            "valueType":"LIST"
-          },
-          "description":"pet status in the store",
-          "type":"string"
-        },
-        "name":{
-          "type":"string"
-        },
-        "photoUrls":{
-          "items":{
-            "type":"string"
-          },
-          "type":"Array"
-        }
-      }
-    },
-    "Tag":{
-      "id":"Tag",
-      "properties":{
-        "id":{
-          "type":"long"
-        },
-        "name":{
-          "type":"string"
-        }
-      }
-    }
+    ]
+
   }
 }
