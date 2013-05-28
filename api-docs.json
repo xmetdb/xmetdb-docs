@@ -1,7 +1,7 @@
 {
   "apiVersion":"0.2",
   "swaggerVersion":"1.1",
-  "basePath":"http://localhost:8080/api",
+  "basePath":"http://xmetdb.github.io/xmetdb-docs",
   "apis":[
     {
       "path":"/api-docs/protocol",
