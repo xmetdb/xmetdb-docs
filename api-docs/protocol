@@ -12,7 +12,7 @@
           "httpMethod":"GET",
           "summary":"Find XMetDB observation by ID",
           "notes":"Returns a XMETDB based on ID",
-          "responseClass":"observations",
+          "responseClass":"observation",
           "nickname":"getObservationById",
           "parameters":[
             {
@@ -45,14 +45,14 @@
           "httpMethod":"POST",
           "summary":"Add a new XMetDB observation",
           "responseClass":"void",
-          "nickname":"addObsrevation",
+          "nickname":"addObservation",
           "parameters":[
             {
               "description":"XMetDB observation",
               "paramType":"body",
               "required":true,
               "allowMultiple":false,
-              "dataType":"observations"
+              "dataType":"observation"
             }
           ],
           "errorResponses":[
@@ -135,7 +135,7 @@
     }
   ],
   "models":{
-      "observations": [
+      "observation": 
         {
             "uri": "http://ambit.uni-plovdiv.bg:8080/xmetdb/protocol/XMETDB20",
             "identifier": "XMETDB20",
@@ -171,7 +171,5 @@
                 }
             }
         }
-    ]
-
   }
 }
