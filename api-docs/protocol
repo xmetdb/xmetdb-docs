@@ -12,8 +12,8 @@
           "httpMethod":"GET",
           "summary":"Find XMetDB observation by ID",
           "notes":"Returns a XMETDB based on ID",
-          "responseClass":"DBProtocol",
-          "nickname":"getPetById",
+          "responseClass":"observations",
+          "nickname":"getObservationById",
           "parameters":[
             {
               "name":"xmetid",
@@ -27,7 +27,7 @@
           "errorResponses":[
             {
               "code":400,
-              "reason":"Invalid ID supplied"
+              "reason":"Invalid XMetDB ID supplied"
             },
             {
               "code":404,
@@ -45,14 +45,14 @@
           "httpMethod":"POST",
           "summary":"Add a new XMetDB observation",
           "responseClass":"void",
-          "nickname":"addPet",
+          "nickname":"addObsrevation",
           "parameters":[
             {
               "description":"XMetDB observation",
               "paramType":"body",
               "required":true,
               "allowMultiple":false,
-              "dataType":"Pet"
+              "dataType":"observations"
             }
           ],
           "errorResponses":[
