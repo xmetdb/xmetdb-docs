@@ -1,0 +1,39 @@
+{
+  "apiVersion":"0.2",
+  "swaggerVersion":"1.1",
+  "basePath":"http://localhost:8080/api",
+  "apis":[
+    {
+      "path":"/api-docs/protocol",
+      "description":"Operations about observations"
+    },
+    {
+      "path":"/api-docs/catalog",
+      "description":"Operations about enzymes"
+    },
+    {
+      "path":"/api-docs/editor",
+      "description":"Submitting and editing XMetDB observations"
+    },
+    {
+      "path":"/api-docs/curator",
+      "description":"Curating XMetDB observations"
+    },    
+    {
+      "path":"/api-docs/myaccount",
+      "description":"My profile"
+    },    
+    {
+      "path":"/api-docs/user",
+      "description":"Operations about users"
+    },
+    {
+      "path":"/api-docs/task",
+      "description":"Long running tasks as per OpenTox API"
+    },
+    {
+      "path":"/api-docs/admin",
+      "description":"Admin tasks"
+    }            
+  ]
+}
