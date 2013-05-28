@@ -1294,7 +1294,7 @@ templates['status_code'] = template(function (Handlebars,depth0,helpers,partials
 
     HeaderView.prototype.showPetStore = function(e) {
       return this.trigger('update-swagger-ui', {
-        discoveryUrl: "http://localhost:8080/api/api-docs.json",
+        discoveryUrl: "http://xmetdb.github.io/xmetdb-docs/api-docs.json",
         apiKey: "special-key"
       });
     };
