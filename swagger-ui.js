@@ -1390,7 +1390,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     
     HeaderView.prototype.showXmetdbAPI = function(e) {
       return this.trigger('update-swagger-ui', {
-        url: "http://xmetdb.org/xmetdb/api-docs"
+        url: "http://www.xmetdb.org/xmetdb/api-docs"
       });
     };
     
